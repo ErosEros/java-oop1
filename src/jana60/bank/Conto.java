@@ -16,14 +16,10 @@ public class Conto {
 	}
 	
 	double versamento(double cifraVersata) {
-		if (cifraVersata > saldo) {
-			saldo += cifraVersata;
-			return cifraVersata;
-			
-		}
-		return saldo ;
-		
+	    saldo += cifraVersata;
+	    return cifraVersata;
 	}
+
 	
 
 	 double prelievo(double cifraPrelevata) {
