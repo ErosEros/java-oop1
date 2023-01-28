@@ -44,7 +44,8 @@ public class Bank {
 			    	System.out.printf("Il tuo saldo è attualmente di : %f\n", c.saldo);
 			    }
 			}
-			
+		
+//		OPZIONE PER IL VERSAMENTO
 			 if(scelta.equals("versamento")) {
 				System.out.print("Digira la cifra che vuoi versare.");
 			    double cifraVersata = s.nextDouble();
@@ -58,26 +59,7 @@ public class Bank {
 		}
 			
 		s.close();
-		}
-		
-//		
-		
-
-//	CHIEDO QUALE SCELTA VUOLE ESEGUIRE L'UTENTE
-//		System.out.print("Scegli cosa fare tra : PRELEVA  -  DEPOSITA - LOGOUT??");
-	
-//		
-////		RICHIESTA VERSAMENTO
-//		System.out.print("Che somma vuoi versare?");
-//		float somma = s.nextInt();
-//		
-
-		
-//		while (scelta == "PRELEVA") {
-//		    System.out.println(i);
-//		    i++;
-//		}
-		
+		}	
 		
 	}
 
