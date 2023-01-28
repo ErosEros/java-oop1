@@ -4,31 +4,39 @@ public class Conto {
 
 	int numeroConto;
 	String nomeProprietario;
-	float saldo = 0;
+	double saldo ;
 	
 	
 	
-	public Conto(int numeroConto, String nomeProprietario, float saldo) {
+	public Conto(int numeroConto, String nomeProprietario, double saldo) {
 		super();
 		this.numeroConto = numeroConto;
 		this.nomeProprietario = nomeProprietario;
 		this.saldo = saldo;
 	}
 	
-	float versamento() {
-		
-		return saldo = 500;
+	double versamento(double cifraVersata) {
+		if (cifraVersata > saldo) {
+			saldo += cifraVersata;
+			return cifraVersata;
+			
+		}
+		return saldo ;
 		
 	}
 	
-//	float prelievo() {
-//	
-//		if(saldo > 0) {
-//			saldo = 0;
-//			System.out.println("Il tuo prelievo è avvenuto con successo.");
-//			
-//		}
-//	}
+
+	 double prelievo(double cifraPrelevata) {
+	        if (cifraPrelevata <= saldo) {
+	            saldo -= cifraPrelevata;
+	            return cifraPrelevata;
+	        } else {
+	            System.out.println("Saldo insufficiente per effettuare il prelievo");
+	            return 0;
+	        }
+	    }
+
+
 	
 }
 

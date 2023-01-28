@@ -29,7 +29,7 @@ public class Prodotto {
 	}
 	
 	float prezzoConIva() {
-		return (prezzo * iva) /100;
+		return ( prezzo +(prezzo * iva) /100);
 	}
 
 	String nomeCompleto() {
