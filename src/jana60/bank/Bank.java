@@ -31,7 +31,7 @@ public class Bank {
 //		OPZIONE PER LA CHIUSURA
 		while (!scelta.equals("chiudere")) {
 			
-			System.out.print("Digita una tra le seguenti opzioni : prelievo - versamento - esci ");
+			System.out.print("Digita una tra le seguenti opzioni : prelievo - versamento - chiudere ");
 			scelta = s.next();    
 	
 //		OPZIONE PER IL PRELIEVO
